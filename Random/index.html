@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Jeu du nombre aléatoire</h1>
+<p>Devinez le nombre entre 1 et 5000</p>
+
+<form onsubmit="event.preventDefault(); game();">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="submit" value="Envoyer">
+</form>
+
+<div id="result"></div>
+
+</body>
+</html>
