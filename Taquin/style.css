@@ -1,8 +1,72 @@
-.puzzle{
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#tableau {
+    margin: 20px auto;
+    width: fit-content;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+    background-color: #ddd;
+    border: 1px solid #999;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+#case_vide {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+}
+
+/* Ajout de quelques effets pour indiquer l'action */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #999;
+}
+
+/* Style pour le conteneur du jeu */
+#tableau {
+    border: 2px solid #999;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style pour les lignes du jeu */
+div[id^="ligne"] {
+    display: flex;
+}
+
+/* Espacement entre les boutons */
+button + button {
+    margin-left: 2px;
+}
+
+/* Animation pour les mouvements des boutons */
+button {
+    transition: transform 0.2s ease;
+}
+
+/* Effet lorsqu'un bouton est cliqué */
+button:active {
+    transform: scale(0.95);
+}
+
+.puzzle {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
-
-
 }

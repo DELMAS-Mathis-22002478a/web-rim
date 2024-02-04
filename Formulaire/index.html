@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form id="monFormulaire">
+    <div id="etape1">
+        <h2>Etape 1</h2>
+        <label>Civilité:</label><br>
+        <input type="radio" name="civilite" value="Mr"> Mr
+        <input type="radio" name="civilite" value="Mme"> Mme<br>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom"><span id="erreurNom" style="color: red;"></span><br>
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom"><span id="erreurPrenom" style="color: red;"></span><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"><span id="erreurEmail" style="color: red;"></span><br>
+        <label for="telephone">Téléphone:</label>
+        <input type="tel" id="telephone"><span id="erreurTelephone" style="color: red;"></span><br>
+    </div>
+
+    <div id="etape2">
+        <h2>Etape 2</h2>
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse"><span id="erreurAdresse" style="color: red;"></span><br>
+        <label for="codePostal">Code Postal:</label>
+        <input type="text" id="codePostal"><span id="erreurCodePostal" style="color: red;"></span><br>
+        <label for="ville">Ville:</label>
+        <input type="text" id="ville"><span id="erreurVille" style="color: red;"></span><br>
+    </div>
+
+    <div id="etape3">
+        <h2>Etape 3</h2>
+        <label for="typeCarte">Type de carte bancaire:</label><br>
+        <input type="radio" name="typeCarte" value="Visa"> Visa
+        <input type="radio" name="typeCarte" value="Visa"> Amex
+        <input type="radio" name="typeCarte" value="Mastercard"> Mastercard<br>
+        <label for="numeroCarte">Numéro de carte:</label>
+        <input type="text" id="numeroCarte"><span id="erreurNumeroCarte" style="color: red;"></span><br>
+        <label for="ccv">CCV:</label>
+        <input type="text" id="ccv"><span id="erreurCCV" style="color: red;"></span><br>
+    </div>
+
+    <button type="button" id="boutonEtape" onclick="validerFormulaire()">Valider</button>
+</form>
+<div id="messageErreur" style="color: red;"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

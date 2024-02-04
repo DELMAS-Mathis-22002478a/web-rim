@@ -1,0 +1,48 @@
+/* Style pour le conteneur du formulaire */
+#monFormulaire {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les champs de formulaire */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style pour les boutons */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les messages d'erreur */
+#errorMsg {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Style pour les messages de succès */
+#successMsg {
+    color: green;
+    margin-bottom: 10px;
+}
